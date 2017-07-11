@@ -1,0 +1,281 @@
+
+html{
+	color:#283533;
+	font-size: 16px;
+	font-family: sans-serif;
+ }
+ 
+ 
+ 
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.smallFont{
+	font-size:14px;
+}
+
+.headingFont{
+	font-size:21px;
+}
+
+
+/*Spacing between elements: 6px, 12px, 24px, 36px and 48px*/
+
+.spacing2{
+	margin-top:12px;
+}
+
+
+
+.commentStats span{
+	color:#B61364;
+}
+
+.likesStats span{
+	display:block;
+}
+
+.commentElement{
+	clear:both; 
+	margin-top:36px
+}
+			
+
+ .thinBorder {
+	 /*
+    border: 1px solid #EDF1EE;
+	*/
+}
+
+.container{
+
+	max-width: 1170px;
+	clear: both;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	
+}
+.mainContainer{
+	min-height:400px;
+}
+ 
+.replyContainer{
+	width:90%;
+	float:right;
+	margin: 12px 0 48px 0;
+}
+ 
+ 
+ .speech-box {
+	display:block;
+	width:100%;
+    position: relative;
+    
+    margin: 48px 0 12px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	clear: both;
+	
+	border: 2px solid #EDF1EE;
+}
+
+.nonInputBox{
+    background-color: #EDF1EE;
+	padding: 15px;
+	margin-top: 24px;
+	
+}
+ 
+ .speech-box textarea{
+	 min-height:60px;
+	 padding:20px;
+	
+	/* remove styling*/
+	border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+ }
+ 
+ .speech-box.top:after {
+    top: -20px;
+    bottom: auto;
+    left: auto;
+	border-width: 20px 0 0 20px;
+    border-color: transparent #EDF1EE;
+}
+
+
+
+
+
+
+.speech-box.inputtop:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+ 
+  left: 15px;
+  top: -20px;
+  border: 10px solid;
+  border-color: transparent transparent #EDF1EE #EDF1EE;
+}
+
+
+.speech-box.inputtop:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+
+  left: 17px;
+  top: -16px;
+  border: 10px solid;
+  border-color: transparent transparent #FFF #FFF;
+}
+
+
+
+
+
+.speech-box:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    display: block;
+    width: 0;
+}
+ 
+.leftfloat{
+	float:left;
+}
+
+.rightfloat{
+	float:right;
+}
+.liketotals{
+	display:inline-block;
+	padding: 6px 12px;
+	clear:both;
+}
+ 
+ .fillArea{
+	 width:100%;
+	 height:100%;
+ }
+ 
+ 
+ .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+	border-color: #B61364;
+	text-transform: uppercase;
+}
+ 
+ 
+.btn-primary {
+    color: #fff;
+    background-color: #B61364;
+}
+
+.btn-secondary {
+    color: #B61364;
+    background-color: #D4B9C5;
+}
+
+.infoBlock{
+	clear:both;
+	z-index:10;
+	position:relative;
+	top:-12px;
+	background-color:#FFFFFF;
+	padding: 0 10px;
+
+	
+	display:inline-block;
+	text-align:center;
+	white-space: nowrap;
+	margin:auto 40%;
+}
+
+hr {
+	height: 2px;
+    background-color: #EDF1EE;
+	clear:both;
+	margin:0;
+    border:none;
+}
+
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #283533;
+	opacity:  0.5;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #283533;
+   opacity:  0.5;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #283533;
+   opacity:  0.5;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #283533;
+   opacity:  0.5;
+}
+
+
+
+/* mobile styles */
+@media screen and (max-width: 600px) {
+
+	.btnFill {
+		width:100%;
+	}
+
+  .speech-box textarea{
+	 min-height:40px;
+	 padding:20px 10px 10px 20px;
+  }
+  
+	.infoBlock{
+		top:-15px;
+		padding: 0;
+
+		display:block;
+		text-align:left;
+		margin:0;
+		margin-bottom:25px;
+	}
+
+	hr {
+		margin-bottom:48px;
+	}
+}
